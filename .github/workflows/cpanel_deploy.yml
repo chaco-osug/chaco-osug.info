@@ -28,9 +28,9 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
           mkdir -p ~/.ssh
-          echo ${{ secrets.KNOWN_HOSTS }} > ~/.ssh/known_hosts
+          echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
           chmod 0700 ~/.ssh
           chmod 0600 ~/.ssh/known_hosts
       

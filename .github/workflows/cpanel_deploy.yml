@@ -33,7 +33,6 @@ jobs:
       - name: Deploy to cpanel
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-          GIT_SSH_COMMAND: "ssh -o PubkeyAcceptedKeyTypes=+ssh-rsa -o HostKeyAlgorithms=+ssh-rsa"
         run: |
           git remote add 'target' "${{ secrets.TARGET_REPOSITORY }}"
-          git push target published -u --exec=/usr/local/cpanel/3rdparty/bin/git-receive-pack
+          GIT_SSH_COMMAND="ssh -o PubkeyAcceptedKeyTypes=+ssh-rsa -o HostKeyAlgorithms=+ssh-rsa" git push target published -u --exec=/usr/local/cpanel/3rdparty/bin/git-receive-pack

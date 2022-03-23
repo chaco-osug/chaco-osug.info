@@ -16,3 +16,5 @@ Der Name der Website stammt von folgendem ab:
 Um anzufangen, kann man zuerst das **[Kapitel 2 - Einführung](https://chaco-osug.info/einfuhrung)** durchlesen, danach irgendein belibieges Thema.
 
 Wir haben eine offizielle **[Telegram-Gruppe](https://t.me/+D9rXWoZoJh6sjEZU?target=_blank)**, in der Sie weitere Informationen erhalten und uns kontaktieren können.
+
+Viel Spaß beim lesen!

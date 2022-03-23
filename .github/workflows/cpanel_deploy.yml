@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy to cPanel
 
 # Controls when the workflow will run
 on:
@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  deploy:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -33,6 +33,7 @@ jobs:
       - name: Deploy to cpanel
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+          GIT_SSH_COMMAND: "ssh -o PubkeyAcceptedKeyTypes=+ssh-rsa -o HostKeyAlgorithms=+ssh-rsa"
         run: |
           git remote add 'target' "${{ secrets.TARGET_REPOSITORY }}"
           git push target published -u --exec=/usr/local/cpanel/3rdparty/bin/git-receive-pack

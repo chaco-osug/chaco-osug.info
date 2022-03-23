@@ -1,4 +1,0 @@
----
-deployment:
-      tasks:
-        - echo This is a placeholder for a deployment

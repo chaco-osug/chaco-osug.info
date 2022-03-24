@@ -14,4 +14,4 @@ Ein bestimmtes Wissen über den Aufbau und die Funktionsweise dieser CMS-Plattfo
 ### Markdown
 Die grundlegende Syntax von Markdown kennen, die für die Erstellung von Seiteninhalten verwendet wird.
 ### Github
-Die Seiten werden auf Github verwaltet. Neue Inhalte sowie Änderungen und Korrekturen sollten daher in dem entsprechenden Repository vorgenommen werden: https://github.com/chaco-osug/chaco-osug.info
+Die Seiten werden auf Github verwaltet. Neue Inhalte sowie Änderungen und Korrekturen sollten daher in dem entsprechenden Repository vorgenommen werden: [Github Open Source User Group Chaco](https://github.com/chaco-osug/chaco-osug.info?target=_blank)

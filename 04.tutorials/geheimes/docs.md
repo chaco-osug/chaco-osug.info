@@ -10,7 +10,7 @@ login:
     visibility_requires_access: true
 access:
     site.login: true
-published: false
+published: true
 ---
 
 ## Test

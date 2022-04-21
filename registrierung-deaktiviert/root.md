@@ -3,4 +3,4 @@ title: Registrierung
 visible: false
 ---
 
-Die Regiestrierung ist momentan deaktiviert. Aber man kann trotzdem den Inhalt der Seiten besichtigen.
+Die Regiestrierung ist momentan deaktiviert. Bitte kontaktieren Sie ein Administrator.
